@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Login.css';
+import '../../styles/screens/Login/Login.css';
 
 
 class Login extends Component {
@@ -57,10 +57,10 @@ class Login extends Component {
   render() {
 
     return (
-      <div className="App">
+      <div className="App login-body">
         <h2>Welcome to "It's Realtime!!"</h2>
         <h2>Your Destiny Awaits</h2>
-        <div className={`container ${this.state.classList}`} style={{marginTop:40}}>
+        <div className={`login-container ${this.state.classList}`} style={{marginTop:40}}>
           <div className="form-container sign-up-container">
             {/* it was form but changed to div because of rendering issues */}
             <div className="sign-up-validation">
